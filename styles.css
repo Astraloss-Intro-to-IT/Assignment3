@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Ubuntu,sans-serif;
+    color: #030e12;
+    background-color: #fcde67;
+    
+}
+a {
+    text-decoration: none;
+}
+
+
+.nav-container{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030e12;
+    color: #fcde67;
+    margin-bottom: 100px;
+}
+.logo{
+    font-weight: 1900;
+    font-style: italic;
+    font-size:35px;
+    margin-left:5%;
+}
+.links {
+    
+    display:flex;
+    align-items: center;
+}
+a{
+    font-size:30px;
+    color: #fcde67;
+    font-weight: 900;
+    
+}
+.links li a:hover{
+    color: grey;
+}
+li a i{
+    font-size:20px;
+   margin: 0 20px 0 20px;
+    
+}
+
+.links li{
+    list-style-type: none;
+}
+.link{
+    height:100%;
+    text-decoration: none;
+    padding:20px;
+}
+
+.hi {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi h1{
+    display: block;
+    width: fit-content;
+    position: relative;
+    font-size: 6rem;
+    font-weight: 300;
+    color:transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+/* .hi a{
+    font-size: 2rem;
+    color: #030e12;
+    border: 4px solid #030e12;
+    
+} */
+
+.hi h1 span {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 0;
+    background-color: #030e12;
+    animation: box_reveal 1s ease;
+    animation-delay: 1s;
+    
+}
+@keyframes box_reveal{
+    50%{
+        width: 100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left:100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color:#030e12;
+    }
+}
+
+
+.profiles{
+    min-height: 100vh;
+    width: 40%;
+    margin-left:30%;
+}
+
+.team_profile{
+    
+    margin:0;
+  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.team_profile img{
+    border: 4px solid black;
+    margin-top: 1%;
+    width: 20vh;
+    border-radius: 5rem;
+}
+.team_profile_item{
+    padding:10px;
+}
+ .text{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 40vh;
+    min-height:45vh;
+    font-size: 120%;
+    font-weight: 00;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+::-webkit-scrollbar-track {
+    border: 2px solid #030e12;
+    border-radius: 10px;
+    }
+    
+::-webkit-scrollbar-thumb {
+    background: #2c2f30;  
+    border-radius: 10px;
+    }
+    
+::-webkit-scrollbar-thumb:hover {
+    background: grey;  
+    }
+
+.text p {
+    padding:20px;
+
+}
+
+.our_project{
+    min-height: 100vh;
+}
+.title {
+    padding-top:11vh;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    background-color: #87bacc;
+    color: #ef9273;
+}
+.end img{
+    padding:20px;
+    padding-left:5%;
+}
+.contact{
+      display: flex; 
+     flex-direction: column; 
+     justify-content: center;
+    margin-right:5%;
+    color:#030e12;
+    font-weight: 700;
+    font-size:15px;
+}
+.contact h3{
+    color:#030e12;
+    font-weight: 700;
+}
