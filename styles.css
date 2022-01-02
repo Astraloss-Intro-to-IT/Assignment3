@@ -68,6 +68,9 @@ li a i{
 }
 
 .hi {
+    display: flex;
+ 
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -76,10 +79,11 @@ li a i{
 }
 
 .hi h1{
+    margin:  50px;
     display: block;
     width: fit-content;
     position: relative;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 300;
     color:transparent;
     animation: text_reveal .5s ease forwards;
@@ -146,6 +150,7 @@ li a i{
     padding:10px;
 }
  .text{
+     background-color: hsl(205, 100%, 96%);
     border: 3px solid black;
     border-radius: 10px;
     width: 40vh;
@@ -203,6 +208,38 @@ li a i{
   border: 3px  solid black;
   border: 3rem;
 }
+
+
+
+.project_text_container{
+    width: 72%;
+    margin-left: 14%;
+}
+.project_text_title{
+    padding: 20px 0 20px 0;
+}
+
+.project_text{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.project_text_item{
+    margin: 20px;
+    padding: 10px;
+    background-color: hsl(205, 100%, 96%);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 40vh;
+    height:40vh;
+    font-size: 120%;
+    font-weight: 00;
+    overflow: auto;
+}
+
+
+
+
 
 
 
