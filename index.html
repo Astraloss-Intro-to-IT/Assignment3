@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assigmnet 3</title>
     <link rel="stylesheet" href="styles.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-  />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
     
@@ -41,9 +40,12 @@
 
         <section id="hi">
           <div class="hi">
-            <h1>Hi, We are Astraloss <span ></span></h1>
+            <a href="#"><h1>Hi, We are Astraloss </h1></a>
             
           </div>
+        </section>
+        <section class="tools">
+          
         </section>
     
         <section class="profiles" id ="profiles">
@@ -77,7 +79,7 @@
             <div class="project_text_title">
               <h1>Overview:</h1>
             </div>
-            <div class="project_text">
+            <div class="project_text1 owl-carousel">
               
               <div class="project_text_item">
                 <h2>Topic:</h2>
@@ -107,7 +109,7 @@
             <div class="project_text_title">
               <h1>Detail description:</h1>
             </div>
-            <div class="project_text">
+            <div class="project_text owl-carousel">
              
               <div class="project_text_item">
                 <h2>Aim</h2>
@@ -170,18 +172,37 @@
           
         </section>
 
-        
+        <script>
+          $(".project_text").owlCarousel({
+            margin: 10,
+              loop:true,
+              autoplay:true,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true,
+             
+          })
 
-        <script src="app.js"></script>
-        <footer id="contact">
+          $(".project_text1").owlCarousel({
+            loop:false,
+            autoplay:false
+          })
+        </script>
+
+          <script src="scroll-out.js" >
+            
+          </script>
+          <script type="text/javascript">
+          ScrollOut({
+            targets: 'h1,section'
+          })
+          </script>
+    
+          <script src="app.js"></script>
+        
             <div class="end">
                 <img src="images/RMIT.png" alt="" width ="15%" height = "15%" >
-                <div class="contact" id="Contacts">
-                    <h3 >Contacts</h3>               
-                        <p>Email: hpioz123@gmail.com</p>
-                        <p>Phone: 0889265054</p>
-                </div>
             </div>
-        </footer>
+        
+        
 </body>
 </html>

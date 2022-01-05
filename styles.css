@@ -13,6 +13,9 @@ body{
     background-color: #fcde67;
     
 }
+
+
+
 a {
     text-decoration: none;
 }
@@ -31,6 +34,7 @@ a {
     background-color: #030e12;
     color: #fcde67;
     margin-bottom: 100px;
+    z-index: 1;
 }
 .logo{
     font-weight: 1900;
@@ -68,60 +72,52 @@ li a i{
 }
 
 .hi {
+    position: relative;
     display: flex;
- 
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hi h1{
-    margin:  50px;
-    display: block;
+
+  
+    display: inline-block;
     width: fit-content;
     position: relative;
     font-size: 8rem;
     font-weight: 300;
-    color:transparent;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: 1.5s;
-}
-/* .hi a{
-    font-size: 2rem;
-    color: #030e12;
-    border: 4px solid #030e12;
+    color:#030e12;
+    transition: 2s ease;
+    /* transform-origin: left; */
+    transform: scaleX(0);
+  
     
-} */
+}
+.hi h1[data-scroll="in"]{
+    transition: 2s ease;
+    transform: scaleX(1);
+    
+}
+.hi h1:hover{
+    transition: 0.5s ease;
+    transform: scale(1.2);
+}
+section {
+    transition: 2s;
+   transform: scaleX(0);
+    transform-origin: left;
+}
 
-.hi h1 span {
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width: 0;
-    background-color: #030e12;
-    animation: box_reveal 1s ease;
-    animation-delay: 1s;
-    
+section[data-scroll="in"]{
+    transform: scaleX(1);
+    transform-origin: right;
 }
-@keyframes box_reveal{
-    50%{
-        width: 100%;
-        left:0;
-    }
-    100%{
-        width: 0;
-        left:100%;
-    }
-}
-@keyframes text_reveal{
-    100%{
-        color:#030e12;
-    }
-}
+
+
+
 
 
 .profiles{
@@ -147,10 +143,13 @@ li a i{
     border-radius: 10%;
 }
 .team_profile_item{
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
     padding:10px;
 }
  .text{
-     background-color: hsl(205, 100%, 96%);
+    
+    background-color: hsl(205, 100%, 96%);
     border: 3px solid black;
     border-radius: 10px;
     width: 40vh;
@@ -158,6 +157,7 @@ li a i{
     font-size: 120%;
     font-weight: 00;
     overflow: auto;
+   
 }
 ::-webkit-scrollbar {
     width: 12px;
@@ -180,7 +180,7 @@ li a i{
 
 .text p {
     padding:20px;
-
+    
 }
 
 .our_project{
@@ -220,9 +220,12 @@ li a i{
 }
 
 .project_text{
-    display: grid;
-    grid-template-columns: auto auto auto;
+  
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .project_text_item{
     margin: 20px;
@@ -243,28 +246,16 @@ li a i{
 
 
 
-
-
 .end{
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     background-color: #87bacc;
     color: #ef9273;
+    display:none;
 }
 .end img{
     padding:20px;
     padding-left:5%;
-}
-.contact{
-      display: flex; 
-     flex-direction: column; 
-     justify-content: center;
-    margin-right:5%;
-    color:#030e12;
-    font-weight: 700;
-    font-size:15px;
-}
-.contact h3{
-    color:#030e12;
-    font-weight: 700;
 }
