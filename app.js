@@ -37,48 +37,81 @@ const reviews = [
     },
   ];
   // select items
-  const img = document.getElementById("person-img");
-  const author = document.getElementById("author");
-  const job = document.getElementById("job");
-  const info = document.getElementById("info");
+  const img1 = document.getElementById("person-img1");
+  const author1 = document.getElementById("author1");
+  const job1 = document.getElementById("job1");
+  const info1 = document.getElementById("info1");
+
+  const img2 = document.getElementById("person-img2");
+  const author2 = document.getElementById("author2");
+  const job2 = document.getElementById("job2");
+  const info2 = document.getElementById("info2");
   
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
-  const randomBtn = document.querySelector(".random-btn");
+
   
   // set starting item
-  let currentItem = 0;
+  let currentItem1 = 0;
+  let currentItem2 = 1;
   
   // load initial item
   window.addEventListener("DOMContentLoaded", function () {
-    const item = reviews[currentItem];
-    img.src = item.img;
-    author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.text;
+    const item = reviews[currentItem1];
+    img1.src = item.img;
+    author1.textContent = item.name;
+    job1.textContent = item.job;
+    info1.textContent = item.text;
   });
+  window.addEventListener("DOMContentLoaded", function () {
+    const item = reviews[currentItem2];
+    img2.src = item.img;
+    author2.textContent = item.name;
+    job2.textContent = item.job;
+    info2.textContent = item.text;
+  });
+
+
+
   
   // show person based on item
-  function showPerson(person) {
+  function showPerson1(person) {
     const item = reviews[person];
-    img.src = item.img;
-    author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.text;
+    img1.src = item.img;
+    author1.textContent = item.name;
+    job1.textContent = item.job;
+    info1.textContent = item.text;
+  }
+  function showPerson2(person) {
+    const item = reviews[person];
+    img2.src = item.img;
+    author2.textContent = item.name;
+    job2.textContent = item.job;
+    info2.textContent = item.text;
   }
   // show next person
   nextBtn.addEventListener("click", function () {
-    currentItem++;
-    if (currentItem > reviews.length - 1) {
-      currentItem = 0;
+    currentItem1 = currentItem1 +2;
+    currentItem2 = currentItem2 +2;
+    if (currentItem1 > reviews.length - 1) {
+      currentItem1 = 0;
     }
-    showPerson(currentItem);
+    if(currentItem2 >reviews.length -1){
+      currentItem2 =1;
+    }
+    showPerson1(currentItem1);
+    showPerson2(currentItem2)
   });
   // show prev person
   prevBtn.addEventListener("click", function () {
-    currentItem--;
-    if (currentItem < 0) {
-      currentItem = reviews.length - 1;
+    currentItem1 = currentItem1 -2;
+    currentItem2 = currentItem2 -2;
+    if (currentItem1 < 0) {
+      currentItem1 = reviews.length - 2;
     }
-    showPerson(currentItem);
+    if (currentItem2 < 0) {
+      currentItem2 = reviews.length - 1;
+    }
+    showPerson1(currentItem1);
+    showPerson2(currentItem2);
   });

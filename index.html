@@ -22,13 +22,16 @@
                     <a class="link"  href ="#hi">Home</a>
                 </li>
                 <li>
+                  <a class="link" href="#tools">Tools</a>
+                </li>
+                <li>
                     <a class="link"  href ="#profiles">Profiles</a>
                 </li>
                 <li>
                     <a class="link"  href ="#project">Project</a>
                 </li>
                 <li>
-                    <a class="link"  href ="#">Contacts</a>
+                    <a class="link"  href ="#reflection">Reflection</a>
                 </li>
                 <li>
                     <a href="#"><i class="fab fa-github" style="font-size: 40px;"></i></a>
@@ -38,43 +41,57 @@
             
         </div>
 
-        <section id="hi">
-          <div class="hi">
+   
+          <div class="hi" id="hi">
             <a href="#"><h1>Hi, We are Astraloss </h1></a>
-            
           </div>
-        </section>
-        <section class="tools">
-          
-        </section>
-    
-        <section class="profiles" id ="profiles">
-          <div class="team_profile">
-            <h1 class = "title">Team Profile</h1>
-                <img src="images/Hung.jpg" id="person-img" alt="" />
-          
-                <h2 class="team_profile_item" id="author">Hung</h2>
-                <h3 class="team_profile_item" id="job">Web developer</h3>
-                <div class="text"><p class="team_profile_item" id="info">
-                  
-                </p></div>
-                
-                <!-- prev next buttons-->
-                <div class="button-container">
-                  <button class="prev-btn">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                </div>
+     
+        <section class="tools" id="tools">
+          <h1 class="title">Tools</h1>
+          <div class="tools-container">
+            <a href="index.html"><button class="button-59" role="button">Our Website</button></a>
+            <a href=""><button class="button-59" role="button">Git Hub link&nbsp&nbsp&nbsp <i class="fab fa-github" ></i></button></a>
           </div>
+          
         </section>
 
-        <section class="our_project" id="project">
-          <div class="title">
-            <h1>Our Project</h1>
+
+
+        <section class="profile" id ="profiles">
+        <h1 class = "title">Team Profile</h1>
+        
+          <div class="profiles">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="team_profile1">
+              <img src="images/Hung.jpg" id="person-img1" alt="" />
+              <h2 class="team_profile_item" id="author1">Hung</h2>
+              <h3 class="team_profile_item" id="job1">Web developer</h3>
+              <div class="text"><p class="team_profile_item" id="info1"></p></div>
+            </div> 
+            <div class="team_profile2">
+              <img src="images/Hung.jpg" id="person-img2" alt="" />
+              <h2 class="team_profile_item" id="author2">Hung</h2>
+              <h3 class="team_profile_item" id="job2">Web developer</h3>
+              <div class="text"><p class="team_profile_item" id="info2"></p></div>                                                       
+            </div>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
+            
+        
+          
+          
+        </section>
+
+        <section class="our_project1" id="project">
+       
+            <h1 class="title">Our Project</h1>
+         
+
+          
           <div class="project_text_container">
             <div class="project_text_title">
               <h1>Overview:</h1>
@@ -167,16 +184,16 @@
             </div>
 
           </div>
-         
-
-          
+        
         </section>
+        <section class="reflection" id="#reflection">
 
+        </section>
         <script>
           $(".project_text").owlCarousel({
             margin: 10,
               loop:true,
-              autoplay:true,
+              autoplay:false,
               autoplayTimeout: 2000,
               autoplayHoverPause: true,
              
@@ -198,9 +215,9 @@
           </script>
     
           <script src="app.js"></script>
-        
+    
             <div class="end">
-                <img src="images/RMIT.png" alt="" width ="15%" height = "15%" >
+                <img src="images/RMIT.png" alt=""  >
             </div>
         
         
