@@ -272,6 +272,9 @@ section[data-scroll="in"]{
     width: 70%;
     margin-left: 15%;
 }
+.project_text_container .button-59{
+    border-radius: 10px;
+}
 .project_text_container a{
     padding-top:2vh;
 }
@@ -376,7 +379,7 @@ p {
   background-color: white;
   border: 2px solid black;
   box-sizing: border-box;
-  border-radius: 10px;
+  
   color: #000;
   cursor: pointer;
   display: inline-flex;
