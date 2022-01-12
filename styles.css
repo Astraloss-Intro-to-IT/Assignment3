@@ -264,9 +264,16 @@ section[data-scroll="in"]{
 }
 
 .project_text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top:0vh;
     width: 70%;
     margin-left: 15%;
+}
+.project_text_container a{
+    padding-top:2vh;
 }
 .project_text_title{
     
@@ -276,7 +283,7 @@ section[data-scroll="in"]{
 }
 
 .our_project2 .project_text_title, .our_project1 .project_text_title {
-    padding-top: 20vh;
+    padding-top: 18vh;
 }
 
 .project_text{
@@ -304,6 +311,7 @@ section[data-scroll="in"]{
     padding: 10px 0;
     font-size:35px;
 }
+
 p {
     font-weight: 500;
     font-size: 25px;
@@ -368,6 +376,7 @@ p {
   background-color: white;
   border: 2px solid black;
   box-sizing: border-box;
+  border-radius: 10px;
   color: #000;
   cursor: pointer;
   display: inline-flex;
