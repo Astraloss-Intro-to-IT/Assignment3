@@ -110,6 +110,7 @@ ul ul li a{
   
     
 }
+
 .hi h1[data-scroll="in"]{
     transition: 1s ease;
     transform: scaleY(1);
@@ -120,6 +121,7 @@ ul ul li a{
     transition: 0.5s ease;
     transform: scale(1.2);
 }
+
 section {
     transition: all 2s ease;
      opacity: 0;
@@ -174,9 +176,11 @@ section[data-scroll="in"]{
     width: 15vh;
     border-radius: 10%;
 }
-
+.team_profile_item{
+    margin:10px;
+}
  .text{
-    background-color: hsl(204, 88%, 93%);
+    background-color: white;
     border: 3px solid black;
     border-radius: 10px;
     width: 40vh;
@@ -256,24 +260,23 @@ section[data-scroll="in"]{
     min-height: 120vh;
 }
 .our-project2{
-    
     min-height: 100vh;
 }
 
 .project_text_container{
     padding-top:0vh;
-    width: 72%;
-    margin-left: 14%;
+    width: 70%;
+    margin-left: 15%;
 }
 .project_text_title{
     
     font-size: 30px;
-    padding-left: 30px;
-    margin-bottom:30px;
+    text-align: center;
+    margin-bottom:10px;
 }
 
 .our_project2 .project_text_title{
-    padding-top: 30vh;
+    padding-top: 20vh;
 }
 
 .project_text{
@@ -285,14 +288,13 @@ section[data-scroll="in"]{
     align-items: center;
 }
 .project_text_item{
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
-    background-color: hsl(204, 88%, 93%);
- 
+    background-color: white;
     border: 3px solid black;
     border-radius: 10px;
-    width: 35vh;
-    height:40vh;
+    width: 98%;
+    height:60vh;
     font-size: 120%;
     font-weight: 500;
     overflow: auto;
@@ -300,6 +302,11 @@ section[data-scroll="in"]{
 .project_text_item h2{
     text-align: center;
     padding: 10px 0;
+    font-size:35px;
+}
+p {
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .owl-dots{
@@ -320,8 +327,6 @@ section[data-scroll="in"]{
   .owl-dot.active{
     background: black!important;
   }
-
-
 
 
 
@@ -361,7 +366,7 @@ section[data-scroll="in"]{
 
 .button-59 {
   align-items: center;
-  background-color: hsl(205, 100%, 96%);
+  background-color: white;
   border: 2px solid black;
   box-sizing: border-box;
   color: #000;
@@ -392,14 +397,14 @@ section[data-scroll="in"]{
 }
 
 .button-59:hover {
-  border-color: #06f;
-  color: #06f;
-  fill: #06f;
+  border-color: grey;
+  color: grey;
+  fill: grey;
 }
 
 .button-59:active {
-  border-color: #06f;
-  color: #06f;
-  fill: #06f;
+  border-color: grey;
+  color: grey;
+  fill: grey;
 }
 
