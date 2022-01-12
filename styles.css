@@ -275,7 +275,7 @@ section[data-scroll="in"]{
     margin-bottom:10px;
 }
 
-.our_project2 .project_text_title{
+.our_project2 .project_text_title, .our_project1 .project_text_title {
     padding-top: 20vh;
 }
 
