@@ -50,9 +50,12 @@ a{
     font-weight: 900;
     
 }
+
 .links li a:hover{
     color: grey;
+   
 }
+
 li a i{
 font-size:20px;
    margin: 0 20px 0 20px;
@@ -112,22 +115,20 @@ ul ul li a{
 }
 
 .hi h1[data-scroll="in"]{
-    transition: 1s ease;
+    transition: 2s ease;
     transform: scaleY(1);
     
 }
 
-.hi h1:hover{
-    transition: 0.5s ease;
-    transform: scale(1.2);
-}
+
 
 section {
-    transition: all 2s ease;
+  
      opacity: 0;
 }
 
 section[data-scroll="in"]{
+    transition: 3s ease;
     opacity: 1;
     
 }
@@ -157,7 +158,7 @@ section[data-scroll="in"]{
     
 }
 .team_profile1 img{
-    border: 4px solid black;
+    border: 4px solid #030e12;
     margin-top: 1%;
     width: 15vh;
     border-radius: 10%;
@@ -171,7 +172,7 @@ section[data-scroll="in"]{
     
 }
 .team_profile2 img{
-    border: 4px solid black;
+    border: 4px solid #030e12;
     margin-top: 1%;
     width: 15vh;
     border-radius: 10%;
@@ -181,7 +182,7 @@ section[data-scroll="in"]{
 }
  .text{
     background-color: white;
-    border: 3px solid black;
+    border: 3px solid #030e12;
     border-radius: 10px;
     width: 40vh;
     height:40vh;
@@ -231,31 +232,42 @@ section[data-scroll="in"]{
 .prev-btn{
     width: 20px;  
   color: #030e12;
-  font-size: 1.25rem;
+  font-size: 3rem;
   background: transparent;
   border-color: transparent;
   margin: 0 0.5rem;
   cursor: pointer;
-  border: 3px  solid black;
+  border: 3px  solid #030e12;
   border: 3rem;
   margin-left: 20%;
   margin-top:15vh;
+  transition: .5 ease;
 }
 .next-btn {
     
   width: 20px;  
   color: #030e12;
-  font-size: 1.25rem;
+  font-size: 3rem;
   background: transparent;
   border-color: transparent;
   margin: 0 0.5rem;
   cursor: pointer;
-  border: 3px  solid black;
+  border: 3px  solid #030e12;
   border: 3rem;
   margin-right:20%;
   margin-top:15vh;
+  transition: .5s ease;
 }
-
+.prev-btn:hover{
+    transition:.5s ease;
+    color: grey;
+    transform: scale(1.5);
+}
+.next-btn:hover{
+    transition: .5s ease;
+    color: grey;
+    transform: scale(1.5);
+}
 .our_project1{
     min-height: 120vh;
 }
@@ -301,7 +313,7 @@ section[data-scroll="in"]{
     margin: 10px;
     padding: 10px;
     background-color: white;
-    border: 3px solid black;
+    border: 3px solid #030e12;
     border-radius: 10px;
     width: 98%;
     height:60vh;
@@ -318,6 +330,7 @@ section[data-scroll="in"]{
 p {
     font-weight: 500;
     font-size: 25px;
+    padding: 0 20px;
 }
 
 .owl-dots{
@@ -327,29 +340,32 @@ p {
   .owl-dot{
     
     height: 15px;
-    width: 15px;
+    width: 45px;
     border-radius: 25px;
     outline: none;
     margin: 0 10px;
-    border: 2px solid black!important;
+    border: 3px solid #030e12!important;
     transition: all 0.3 ease;
   }
   .owl-dot:hover,
   .owl-dot.active{
-    background: black!important;
+    border: 2px solid #030e12!important;
+    background: #030e12!important;
+    transition: 2.5 ease;
+    transform: scale(1.3);
   }
 
 
 
 
 .reflection{
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
   
 .end{
     width: 100%;
-    height: 100px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -377,7 +393,7 @@ p {
 .button-59 {
   align-items: center;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #030e12;
   box-sizing: border-box;
   
   color: #000;
@@ -411,6 +427,8 @@ p {
   border-color: grey;
   color: grey;
   fill: grey;
+  transition: 1s ease;
+  transform: scale(1.1);
 }
 
 .button-59:active {
