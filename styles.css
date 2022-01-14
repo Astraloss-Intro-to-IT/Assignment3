@@ -366,14 +366,32 @@ p {
    
 }
 .job{
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    
     width: 22%;
+   
+    align-items: center;
+    
+}
+.job img{
+    width: 40%;
+}
+.job h2{
+    margin:10px;
+}
+.job-text{
+    width: 100%;
     background-color: white;
     border-radius: 10px;
     overflow: auto;
     border:5px solid #030e12;
+    height: 50vh;
+    line-height: 30px;
 }
-
+.job-text p span{
+    font-weight: 600;
+}
 .reflection{
     min-height: 90vh;
 }
