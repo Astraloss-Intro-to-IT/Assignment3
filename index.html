@@ -258,7 +258,7 @@
                 <div class="image-container">
                   <img class="img" src="images/icon_images/talking.png" alt="">
                 </div>
-                <h2>Group Communication</h2>
+                <h2>Communication</h2>
                 <p>As is customary in Vietnam, we exchange our Facebook contacts first and then create a Messenger group for better content sharing and task division discussion. Twice a week, we'll get together. After the IT Tutorial on Thursday afternoon, we'll walk to the 8th floor and have a Face-to-Face meeting in the Student Hub. On Saturday evening, we'll have another meeting where we'll communicate via Discord, which is similar to Skype but has more features. We'll go through the week's work and revisions, as well as the plan for the following week. If a teammate fails to interact with the team, we shall attempt to contact him/her as quickly as possible via Facebook, email, or phone. If the foregoing attempts failed multiple times, we would have to grudgingly report that teammate.</p>
               </div>
               
@@ -366,10 +366,9 @@
           $(".project_text").owlCarousel({
             margin: 10,
               loop:true,
-              autoplay:false,
-              // autoplayTimeout: 2000,
-              // autoplayHoverPause: true,
-              // items:2,
+              autoplay:true,
+            autoplayTimeout: 5000,
+              autoplayHoverPause: true,
               responsive:{
                 0:{
                   items:1
@@ -382,13 +381,17 @@
           })
 
           $(".project_text1").owlCarousel({
-            loop:false,
-            autoplay:false,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout: 5000,
+              autoplayHoverPause: true,
             items: 1
           })
           $(".individual-reflect-container").owlCarousel({
-            loop:false,
-            autoplay:false,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout: 5000,
+              autoplayHoverPause: true,
             responsive:{
                 0:{
                   items:1
