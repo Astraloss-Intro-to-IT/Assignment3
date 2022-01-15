@@ -17,7 +17,9 @@ body{
 a {
     text-decoration: none;
 }
-
+.image-container{
+    width:5vw;
+}
 .nav-container{
     position: fixed;
     height: 10vh;
@@ -309,17 +311,20 @@ section[data-scroll="in"]{
     align-items: center;
 }
 .project_text_item{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
     margin: 10px;
     padding: 10px;
-    background-color: white;
-    border: 3px solid #030e12;
+    
     border-radius: 10px;
     width: 98%;
     height:60vh;
     font-size: 120%;
     font-weight: 500;
-    overflow: auto;
+   
 }
+
 .project_text_item h2{
     text-align: center;
     padding: 10px 0;
@@ -327,9 +332,18 @@ section[data-scroll="in"]{
 }
 
 p {
+  
     font-weight: 500;
     font-size: 25px;
     padding: 0 20px;
+}
+.project_text_item p{
+    padding:20px;
+   height: 45vh;
+    background-color: white;
+    border: 3px solid #030e12;
+    border-radius: 10px;
+    overflow: auto;
 }
 
 .owl-dots{
@@ -401,7 +415,7 @@ p {
 }
 
 .group-reflect-container{
-    min-height: 30vh;
+    min-height: 10vh;
     background-color: white;
     margin-bottom:20px ;
     width: 60%;
