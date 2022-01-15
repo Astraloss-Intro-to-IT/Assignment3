@@ -501,7 +501,7 @@ p {
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-image: url("images/background.jpg");
+    background-color: rgb(213, 236, 241);
     color: #ef9273;
 
 }
