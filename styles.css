@@ -430,7 +430,7 @@ p {
 }
 
 .group-reflect-container{
-    min-height: 10vh;
+    height: 40vh;
     background-color: white;
     margin-bottom:20px ;
     width: 60%;
@@ -443,6 +443,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+    overflow: auto;
 }
 .group-reflect p{
     
@@ -473,9 +478,7 @@ p {
 .individual-reflect p{
     overflow: auto;
 }
-.individual-reflect h2{
-    text-align: center;
-}
+
 
 
 

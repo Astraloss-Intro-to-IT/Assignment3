@@ -369,7 +369,15 @@
               autoplay:false,
               // autoplayTimeout: 2000,
               // autoplayHoverPause: true,
-              items:2
+              // items:2,
+              responsive:{
+                0:{
+                  items:1
+                },
+                1000:{
+                  items:2
+                }
+              }
              
           })
 
@@ -381,7 +389,14 @@
           $(".individual-reflect-container").owlCarousel({
             loop:false,
             autoplay:false,
-            items: 2
+            responsive:{
+                0:{
+                  items:1
+                },
+                1000:{
+                  items:2
+                }
+              }
           })
 
 
