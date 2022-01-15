@@ -111,7 +111,7 @@ ul ul li a{
     display: inline-block;
     width: fit-content;
     position: relative;
-    font-size: 8rem;
+    font-size: 8vw;
     font-weight: 300;
     color:#030e12;
     transition: 2s ease;
