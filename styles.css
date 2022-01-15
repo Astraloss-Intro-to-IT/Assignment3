@@ -389,6 +389,10 @@ p {
     height: 50vh;
     line-height: 30px;
 }
+
+.job-text p{
+    padding-top:20px;
+}
 .job-text p span{
     font-weight: 600;
 }
@@ -397,26 +401,41 @@ p {
 }
 
 .group-reflect-container{
-    min-height: 40vh;
-    background-color: #030e12;
+    min-height: 30vh;
+    background-color: white;
     margin-bottom:20px ;
-    width: 40%;
-    margin-left: 30%;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
-.group-reflect{
+.group-reflect p{
+    margin:10px;
+    overflow: auto;
 
 }
 .individual-reflect-container{
-    display: grid;
-    grid-template-columns: auto auto;
     min-height: 60vh;    
-    background-color: #030e12;
-    margin-left: 10%;
-    width: 80%;
+    width: 100%;
 }
 
 .individual-reflect{
+    height: 50vh;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-left:10%;
+    margin-right:10%;
+    width: 80%;
+    background-color: white;
+    overflow: auto;
+    
+}
+.individual-reflect p{
+    overflow: auto;
+}
+.individual-reflect h2{
+    text-align: center;
 }
 
 
